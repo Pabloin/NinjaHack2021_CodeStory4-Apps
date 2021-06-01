@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: dd-demo
+  namespace: default
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      dd: web
+  template:
+    metadata:
+      labels:
+        dd: web
+    spec:
+      containers:
+      - name: dd-site
+        image: us.icr.io/pabloin/codestory-app:2.0
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: dd-entrypoint
+  namespace: default
+spec:
+  type: NodePort
+  selector:
+    dd: web
+  ports:
+  - port: 4500
+    targetPort: 80
+    nodePort: 30003
