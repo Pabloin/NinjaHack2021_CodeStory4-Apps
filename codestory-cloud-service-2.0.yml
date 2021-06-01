@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cc-demo
+  namespace: default
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      cc: web
+  template:
+    metadata:
+      labels:
+        cc: web
+    spec:
+      containers:
+      - name: cc-site
+        image: us.icr.io/pabloin/codestory-app:2.0
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: cc-entrypoint
+  namespace: default
+spec:
+  type: NodePort
+  selector:
+    cc: web
+  ports:
+  - port: 4500
+    targetPort: 80
+    nodePort: 30002
