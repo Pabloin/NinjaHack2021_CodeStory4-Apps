@@ -36,11 +36,17 @@ export class IniciaComponent implements OnInit {
     console.log('TIP!APP: action func2');
   }
 
-  gotoSube(){
-    console.log('TIP!APP: action sube');
+  gotoCrece(){
+    console.log('TIP!APP: action sube - crece');
     this.router.navigate(['/sube']); 
   }
   
+  gotoCuida(){
+    console.log('TIP!APP: action busca - cuida');
+    this.router.navigate(['/busca']); 
+  }
+  
+
   gotoAuth(){
     console.log('TIP!APP: action auth');
     this.router.navigate(['/auth']); 
