@@ -51,47 +51,47 @@ export const MENU_ITEMS: NbMenuItem[] = [
     group: true,
   },
   {
-    title: 'Busca',
+    title: 'Crece!',
     icon: 'lock-outline',
     children: [
       {
-        title: 'Busca Texto',
-        link: '/pages/forms/busca',
-      },
-      {
-        title: 'Busca Avanzado',
-        link: '/pages/forms/busca',
-      }
-    ],
-  },
-  {
-    title: 'Sube',
-    icon: 'lock-outline',
-    children: [
-      {
-        title: 'Sube link',
+        title: 'Tips!',
         link: '/pages/forms/sube',
       },
       {
-        title: 'Sube Dataset',
+        title: 'Invierte',
         link: '/pages/forms/sube',
       }
     ],
   },
   {
-    title: 'Analiza',
+    title: 'Cuida ...',
     icon: 'lock-outline',
     children: [
       {
-        title: 'Opcion 1',
+        title: 'Tips!',
+        link: '/pages/forms/busca',
+      },
+      {
+        title: 'Ahorro',
+        link: '/pages/forms/busca',
+      }
+    ],
+  },
+  {
+    title: 'tip!Coins',
+    icon: 'lock-outline',
+    children: [
+      {
+        title: 'Saldo',
         link: '/pages/forms/analiza',
       },
       {
-        title: 'Opcion 2',
+        title: 'Simula',
         link: '/pages/forms/analiza',
       },
       {
-        title: 'Opcion 3',
+        title: 'Regala',
         link: '/pages/forms/analiza',
       }
     ],
