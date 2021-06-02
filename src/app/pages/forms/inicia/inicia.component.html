@@ -8,12 +8,12 @@
   <nb-card-body>
     <nb-actions size="medium" fullWidth>
 
-      <nb-action>
+      <nb-action  (click)="gotoSube()">
         <nb-icon class="action-icon" icon="activity-outline"></nb-icon>
         <span>{{ txt_crece }}</span>
       </nb-action>
 
-      <nb-action>
+      <nb-action  (click)="gotoAuth()">
         <nb-icon class="action-icon" icon="search-outline"></nb-icon>
         <span>{{ txt_cuida }}</span>
       </nb-action>
@@ -29,7 +29,7 @@
   </nb-card-body>
 </nb-card>  
 
-<br><br>
+
 
 
 <div id="images">
@@ -39,7 +39,39 @@
 
 </div>
 
-<br><br>
+
+<br><br> 
+
+
+<!-- <nb-card>
+  <nb-card-body>
+    <nb-actions size="medium" fullWidth>
+
+      <nb-action  (click)="gotoAuth()">
+        <nb-icon class="action-icon" icon="search-outline"></nb-icon>
+        <span>Login</span>
+      </nb-action>
+
+    </nb-actions>
+
+  </nb-card-body>
+</nb-card>  -->
+
+
+
+<nb-card>
+  <nb-card-header>Conecta!</nb-card-header>
+  <nb-card-body>
+    <div class="buttons-row">
+      <button nbButton (click)="gotoAuth()"  status="primary" hero>
+        Login
+      </button>
+      <div class="registra">
+        Todavía no sos cliente? <u><a  (click)="gotoRegister()" >Registrate!</a></u>
+      </div> 
+    </div>
+  </nb-card-body>
+</nb-card>
 
 
 <br>
