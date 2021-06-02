@@ -56,11 +56,11 @@ export const MENU_ITEMS: NbMenuItem[] = [
     children: [
       {
         title: 'Tips!',
-        link: '/pages/forms/busca',
+        link: '/pages/forms/sube',
       },
       {
         title: 'Invierte',
-        link: '/pages/forms/busca',
+        link: '/pages/forms/sube',
       }
     ],
   },
@@ -70,11 +70,11 @@ export const MENU_ITEMS: NbMenuItem[] = [
     children: [
       {
         title: 'Tips!',
-        link: '/pages/forms/sube',
+        link: '/pages/forms/busca',
       },
       {
         title: 'Ahorro',
-        link: '/pages/forms/sube',
+        link: '/pages/forms/busca',
       }
     ],
   },
