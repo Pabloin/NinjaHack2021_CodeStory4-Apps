@@ -6,7 +6,6 @@ import { Component } from '@angular/core';
   template: `
     <span class="created-by">With ♥ to 
        <b><a href="https://www.theninjaproject.bbva/" target="_blank">Ninja Hack @ 2021</a></b>
-       &nbsp; ~ Code Story 4
     </span>
     <div class="socials">
       <a href="https://github.com/Pabloin/NinjaHack2021_CodeStory4-Apps" target="_blank" class="ion ion-social-github"></a>
