@@ -13,6 +13,10 @@ export class IniciaComponent implements OnInit {
   txt_busca = "Busca";
   txt_analiza = "Analiza";
 
+  txt_crece = "Crece!";
+  txt_cuida = "Cuida... ";
+
+
   constructor() { }
 
   ngOnInit() {
