@@ -12,12 +12,17 @@ import { MockDataModule } from './mock/mock-data.module';
 
 const socialLinks = [
   {
-    url: 'https://github.com/Pabloin/NinjaHack2021_CodeStory4-Apps',
+    url: 'https://github.com/akveo/nebular',
     target: '_blank',
     icon: 'github',
   },
   {
-    url: 'https://twitter.com/hashtag/theNinjaProject?src=hashtag_click',
+    url: 'https://www.facebook.com/akveo/',
+    target: '_blank',
+    icon: 'facebook',
+  },
+  {
+    url: 'https://twitter.com/akveo_inc',
     target: '_blank',
     icon: 'twitter',
   },
