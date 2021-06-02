@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'inicia',
@@ -13,7 +14,11 @@ export class IniciaComponent implements OnInit {
   txt_busca = "Busca";
   txt_analiza = "Analiza";
 
-  constructor() { }
+  txt_crece = "Crece!";
+  txt_cuida = "Cuida... ";
+
+
+  constructor(private router: Router) {}
 
   ngOnInit() {
     if (this.idioma === 'en') {
@@ -23,5 +28,33 @@ export class IniciaComponent implements OnInit {
     }
   }
 
+  func1() {
+    console.log('TIP!APP: action func1');
+  }
+
+  func2() {
+    console.log('TIP!APP: action func2');
+  }
+
+  gotoCrece(){
+    console.log('TIP!APP: action sube - crece');
+    this.router.navigate(['/sube']); 
+  }
+  
+  gotoCuida(){
+    console.log('TIP!APP: action busca - cuida');
+    this.router.navigate(['/busca']); 
+  }
+  
+
+  gotoAuth(){
+    console.log('TIP!APP: action auth');
+    this.router.navigate(['/auth']); 
+  }
+
+  gotoRegister(){
+    console.log('TIP!APP: action auth');
+    this.router.navigate(['/auth/register']); 
+  }
 
 }
