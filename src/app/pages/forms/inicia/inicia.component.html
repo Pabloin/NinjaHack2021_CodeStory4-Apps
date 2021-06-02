@@ -1,34 +1,79 @@
 
-  <img src="assets/images/banner-pmoreno-01-inicia.jpeg" alt="" width="100%">
+  <!-- <img src="assets/images/banner-pmoreno-01-inicia.jpeg" alt="" width="100%">
   <br>
-&nbsp;
+&nbsp; -->
+
 
 <nb-card>
   <nb-card-body>
     <nb-actions size="medium" fullWidth>
 
-      <nb-action>
+      <nb-action  (click)="gotoCrece()">
+        <nb-icon class="action-icon" icon="activity-outline"></nb-icon>
+        <span>{{ txt_crece }}</span>
+      </nb-action>
+
+      <nb-action  (click)="gotoCuida()">
         <nb-icon class="action-icon" icon="search-outline"></nb-icon>
-        <span>{{ txt_busca }}</span>
+        <span>{{ txt_cuida }}</span>
       </nb-action>
 
-      <nb-action>
-        <nb-icon class="action-icon" icon="upload-outline"></nb-icon>
-        <span>{{ txt_sube }}</span>
-      </nb-action>
-
-      <nb-action>
+      <!-- <nb-action>
         <nb-icon class="action-icon" icon="activity-outline"></nb-icon>
         <span>{{ txt_analiza }}</span>
+      </nb-action>  
+      -->
+
+    </nb-actions>
+
+  </nb-card-body>
+</nb-card>  
+
+
+
+
+<div id="images">
+  
+  <img src="assets/images/rol_crece_01.png" class="fblogo" (click)="gotoCrece()" alt="" width="50%">
+  <img src="assets/images/rol_cuida_01.png" class="fblogo" (click)="gotoCuida()"alt="" width="50%">
+
+</div>
+
+
+<br><br> 
+
+
+<!-- <nb-card>
+  <nb-card-body>
+    <nb-actions size="medium" fullWidth>
+
+      <nb-action  (click)="gotoAuth()">
+        <nb-icon class="action-icon" icon="search-outline"></nb-icon>
+        <span>Login</span>
       </nb-action>
 
     </nb-actions>
+
+  </nb-card-body>
+</nb-card>  -->
+
+
+
+<nb-card>
+  <nb-card-header>Conecta!</nb-card-header>
+  <nb-card-body>
+    <div class="buttons-row">
+      <button nbButton (click)="gotoAuth()"  status="primary" hero>
+        Login
+      </button>
+      <div class="registra">
+        Todavía no sos cliente? <u><a  (click)="gotoRegister()" >Registrate!</a></u>
+      </div> 
+    </div>
   </nb-card-body>
 </nb-card>
 
 
-<br><br><br><br>
-<img src="assets/images/Logo_CodeStory4.png" id="logo" alt="" width="25%">
 <br>
 <!-- Code Story v1.1 -->
 <!-- 
